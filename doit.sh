@@ -16,6 +16,6 @@ cp device/samsung/fascinatemtd/bcm4329.ko update/data/system/lib/modules
 cd update/data
 ZIP="KernelUpdate-`date +%m%d`.zip"
 zip -r $ZIP . 
-mv $ZIP ../..
+mv -f $ZIP ../..
 cd ../..
 
