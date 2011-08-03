@@ -3,6 +3,7 @@ mount("yaffs2", "MTD", "system", "/system");
 show_progress(0.200000, 0);
 show_progress(0.200000, 10);
 package_extract_dir("system/", "/system/");
+ui_print("Flashing kernel...");
 package_extract_file("bml_over_mtd", "/tmp/bml_over_mtd");
 set_perm(0, 0, 0777, "/tmp/bml_over_mtd");
 package_extract_file("bml_over_mtd.sh", "/tmp/bml_over_mtd.sh");
@@ -12,3 +13,4 @@ assert(package_extract_file("boot.img", "/tmp/boot.img"),
        delete("/tmp/boot.img"));
 show_progress(0.100000, 0);
 unmount("/system");
+ui_print("Done!");
