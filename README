@@ -1,0 +1,25 @@
+Kernel build script made by jt134.
+Contributions by
+ KhasMek
+
+This will compile and package a CWM flashable zip for several devices.
+Made for jt1134's Vanila Gingerbread.
+
+Usage-
+./update/doit.sh [DEVICE]
+
+Default available devices are
+	fascinatemtd
+	showcasemtd
+	mesmerizemtd
+	vzwtabmtd
+
+If no [DEVICE] is called, it will default to fascinatemtd for jt1134's ease of use.
+
+
+example:
+./update/doit.sh mesmerizemtd
+(will build and package a kernel for the mesmerizemtd)
+
+./update/doit.sh
+(will build and package a kernel for the fascinatemtd)
