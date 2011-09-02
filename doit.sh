@@ -3,7 +3,7 @@
 DEVICE=${1%}
 
 if [ "$DEVICE" != "vzwtabmtd" ]; then
-        echo "product is blank blank or fascinatemtd compatible, fascinatemtd will be used"
+        echo "product is blank or fascinatemtd compatible, fascinatemtd will be used"
         CONFIG=fascinatemtd
 	if [ "$DEVICE" = "" ]; then
 		DEVICE=fasinatemtd
